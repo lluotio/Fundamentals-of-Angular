@@ -1,0 +1,11 @@
+<div>
+  <h1>Property and Event Binding</h1>
+  <button 
+    [style.backgroundColor]="isOn ? 'green' : 'red'"
+    (click)="changeColor()">
+    Paina miuta!
+  </button>
+  <p><input id="name" [(ngModel)]="name" *ngIf="isOn" placeholder="Kirjoita jotain" /></p>
+
+  <p>{{ name }}</p>
+</div>
