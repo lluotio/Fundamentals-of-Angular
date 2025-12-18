@@ -1,0 +1,5 @@
+<h2>Custom pipe training:</h2>
+
+<input #inputRef (input)="handleChange(inputRef.value)"/>
+<p>Original input: {{ originalText }} </p>
+<p>Piped input: {{ originalText | megapipe }}</p>
