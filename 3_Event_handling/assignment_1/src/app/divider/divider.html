@@ -1,0 +1,17 @@
+<form (ngSubmit)="handleSelection(userSelection.value)">
+
+  <h3>Divider</h3>
+
+  <label for="userSelection">Choose divider!</label>
+  <select id="userSelection" #userSelection>
+    <option value="">Select divider</option>
+    <option *ngFor="let n of [2,3,4,5,6,7,8,9,10]" [value]="n">
+      {{ n }}
+    </option>
+  </select>
+
+  <button type="submit">Click me!</button>
+
+  <p>Your sum divided by your choice: {{ dividedNumber }}</p>
+
+</form>

@@ -1,0 +1,19 @@
+<form (ngSubmit)="handleUserinput(userInput.value)">
+    <div>
+        <h3>Random number generator</h3>
+        <p>This application will ask you to enter integer number. After that by clicking button application will generate random number and add your given number to it.</p>
+    </div>
+
+    <div>
+        <label for="userInput">Enter integer number:</label>
+        <input id="userInput" #userInput/>
+    </div>
+
+    <div>
+        <button type="submit">Click me!</button>
+        <p>Generated number: {{ generatedNumber }}</p>
+        <p>Your number: {{ userNumber }}</p>
+        <p>Sum of your number and generated random number: {{ sumofNumbers }}</p>
+        
+    </div>
+</form>
