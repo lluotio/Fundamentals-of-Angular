@@ -1,0 +1,33 @@
+<mat-card class="cv-card">
+  <mat-card-title>Home</mat-card-title>
+  <mat-card-content>
+
+    <mat-card-subtitle>Laskin</mat-card-subtitle>
+    <p>
+      Laskin on tehty aika suoraviivaisesti: käyttäjän syöttämä teksti sidotaan
+      <code>ngModel</code>-sidonnalla muuttujaan, ja napit vain lisäävät siihen
+      merkkejä. Kun käyttäjä painaa "=", koko merkkijono ajetaan
+      <code>eval()</code>-funktion läpi, joka laskee lopputuloksen. Ei mikään
+      maailman turvallisin ratkaisu, mutta tähän pieneen demoon se toimii
+      oikein mainiosti.
+    </p>
+
+    <mat-card-subtitle>Tekstieditori</mat-card-subtitle>
+    <p>
+      Tekstieditori on saman henkinen: käyttäjä kirjoittaa tekstin
+      <code>textarea</code>-kenttään, ja eri napit muokkaavat sitä suoraan
+      komponentin metodeissa. Mukana on esimerkiksi tekstin muuttaminen isoiksi
+      tai pieniksi kirjaimiksi sekä tekstin kääntäminen ympäri. Lisäksi
+      komponentti laskee automaattisesti merkkien ja sanojen määrän.
+    </p>
+
+    <mat-card-subtitle>Sää</mat-card-subtitle>
+    <p>
+      Säänhaku toimii Open-Meteon ilmaisella API:lla. Käyttäjä syöttää
+      kaupungin nimen, ja komponentti hakee ensin koordinaatit geokoodaus-API:n
+      kautta. Sen jälkeen haetaan ajantasainen sää, joka näytetään kortissa.
+      Ei API-avaimia, ei rekisteröitymistä — toimii suoraan.
+    </p>
+
+  </mat-card-content>
+</mat-card>

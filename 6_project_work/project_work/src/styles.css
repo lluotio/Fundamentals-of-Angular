@@ -1,0 +1,35 @@
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 0;
+}
+
+.cv-card {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.cv-card mat-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #d219c99a;
+  margin-bottom: 16px;
+}
+
+.cv-card mat-card-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d219c99a;
+  margin-bottom: 16px;
+}
+
+.cv-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}

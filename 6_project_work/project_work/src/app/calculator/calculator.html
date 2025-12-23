@@ -1,0 +1,30 @@
+<mat-card class="cv-card">
+  <mat-card-title>Calculator</mat-card-title>
+  <mat-card-content>
+        <div class="calculator">
+        <input matInput [(ngModel)]="display" readonly />
+
+        <div class="buttons">
+            <button mat-raised-button (click)="press('7')">7</button>
+            <button mat-raised-button (click)="press('8')">8</button>
+            <button mat-raised-button (click)="press('9')">9</button>
+            <button mat-raised-button color="accent" (click)="press('/')">/</button>
+
+            <button mat-raised-button (click)="press('4')">4</button>
+            <button mat-raised-button (click)="press('5')">5</button>
+            <button mat-raised-button (click)="press('6')">6</button>
+            <button mat-raised-button color="accent" (click)="press('*')">*</button>
+
+            <button mat-raised-button (click)="press('1')">1</button>
+            <button mat-raised-button (click)="press('2')">2</button>
+            <button mat-raised-button (click)="press('3')">3</button>
+            <button mat-raised-button color="accent" (click)="press('-')">-</button>
+
+            <button mat-raised-button (click)="press('0')">0</button>
+            <button mat-raised-button (click)="press('.')">.</button>
+            <button mat-raised-button color="warn" (click)="clear()">C</button>
+            <button mat-raised-button color="accent" (click)="calculate()">=</button>
+        </div>
+        </div>
+    </mat-card-content>
+</mat-card>

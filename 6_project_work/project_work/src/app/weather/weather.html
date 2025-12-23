@@ -1,0 +1,23 @@
+<mat-card class="cv-card">
+  <mat-card-title>Weather</mat-card-title>
+  <mat-card-content>
+        <div class="weather-search">
+        <input
+            [(ngModel)]="city"
+            placeholder="Enter city name..."
+        />
+
+        <button mat-raised-button color="primary" (click)="searchCity()">
+            Search
+        </button>
+        </div>
+
+        <div class="weather-card" *ngIf="weather">
+        <h2>Weather in {{ weatherCity }}</h2>
+
+        <p><strong>Temperature:</strong> {{ weather.temperature }} °C</p>
+        <p><strong>Wind:</strong> {{ weather.windspeed }} km/h</p>
+        <p><strong>Weather code:</strong> {{ weather.weathercode }}</p>
+        </div>
+    </mat-card-content>
+</mat-card>
