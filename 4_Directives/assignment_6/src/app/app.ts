@@ -1,14 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ChangeColor } from './change-color';
-import { FontSize } from './font-size';
-
+import { ChangeBgDirective } from './change-bg';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ChangeColor, FontSize],
+  imports: [RouterOutlet, ChangeBgDirective],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('assignment_1');
+  count: number = 0;
+  addCount(){
+    this.count++;
+  }
 }

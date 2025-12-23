@@ -1,0 +1,28 @@
+<div class="menu">
+  <button (click)="setPage('home')">Etusivu</button>
+  <button (click)="setPage('about')">Tietoa</button>
+  <button (click)="setPage('contact')">Yhteystiedot</button>
+</div>
+
+<div [ngSwitch]="page">
+
+  <div *ngSwitchCase="'home'">
+    <h2>Etusivu</h2>
+    <p>Tervetuloa Angular-sovellukseen.</p>
+  </div>
+
+  <div *ngSwitchCase="'about'">
+    <h2>Tietoa</h2>
+    <p>Tämä on esimerkkisivu ngSwitch-harjoitukseen.</p>
+  </div>
+
+  <div *ngSwitchCase="'contact'">
+    <h2>Yhteystiedot</h2>
+    <p>Voit ottaa yhteyttä sähköpostilla.</p>
+  </div>
+
+  <div *ngSwitchDefault>
+    <p>Valitse sivu yläpuolelta.</p>
+  </div>
+
+</div>

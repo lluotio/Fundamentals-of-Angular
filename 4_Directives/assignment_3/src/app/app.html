@@ -1,0 +1,11 @@
+<app-ng-switch-training></app-ng-switch-training>
+
+<button (click)="toggleImage()">
+  {{ showImage ? 'Piilota kuva' : 'Näytä kuva'}}
+</button>
+
+<div *ngIf="showImage">
+  <img src="lizard.jpg" alt="Kuva">
+</div>
+
+<app-country-component></app-country-component>
